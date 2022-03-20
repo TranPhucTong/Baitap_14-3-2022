@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="100">
+
+    <ImageView
+        android:id="@+id/image_12"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:src="@drawable/donut_yellow_1"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:text="Tasty Donut"
+            android:gravity="left|center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_ghiChu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:text="Spicy tasty donut family"
+            android:textColor="#C4C4C4"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/gia"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="85"
+                android:gravity="bottom"
+                android:text="$10.00"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:background="#F4DDDD"
+                android:src="@drawable/plus_button"
+                android:layout_gravity="right"
+                android:id="@+id/plus"/>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
